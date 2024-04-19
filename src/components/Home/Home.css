@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#homeContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  background-color: rgb(8 10 26);
+}
+#homeContent {
+  width: 1440px;
+}
+#popular{
+  margin-top: 30px;
+}
+#popular > div > p {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#popularContent{
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  grid-gap: 40px;
+}

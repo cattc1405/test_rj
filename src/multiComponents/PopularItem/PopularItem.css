@@ -1,0 +1,57 @@
+#popularItem {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease;
+
+}
+#popularItem:hover{
+    transform: scale(0.95);
+}
+#popularItem > img {
+  width: 97%;
+  height: 96%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+#popularItem > #filmTitleView {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 55px;
+  width: 85%;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  position: absolute;
+  top: 190px;
+  padding: 0 20px 0 20px;
+
+  justify-content: space-between;
+}
+#popularItem > div > p {
+  color: white;
+  width: 70%;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#filmTitleView > div {
+  width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  height: 35px;
+  background-color: red;
+}
+#filmTitleView > div > img {
+  height: 12px;
+  width: 14px;
+}

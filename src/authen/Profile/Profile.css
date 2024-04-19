@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  #profileContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(8 10 26);
+  }
+  #profileContent {
+    width: 1440px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+  }

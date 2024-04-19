@@ -1,0 +1,102 @@
+#topBar {
+  height: 96px;
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(8 10 26);
+  position: fixed;
+  z-index: 99;
+  align-items: center;
+}
+
+#topBar > a {
+  width: 10%;
+  height: 100%;
+}
+#topBar > a > img {
+  width: 100%;
+  height: 100%;
+}
+#searchView {
+  width: 40%;
+  height: 48px;
+  display: flex;
+  border-radius: 6px;
+  flex-direction: row;
+  background-color: rgb(233, 229, 223);
+}
+
+#searchView button {
+  width: 8%;
+  height: 100%;
+  border-radius: 6px;
+  background-color: red;
+}
+#searchView > button:hover {
+  cursor: pointer;
+}
+#searchView input {
+  width: 90%;
+  height: 100%;
+  background-color: rgb(233, 229, 223);
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 15px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+#searchView input {
+  border: none;
+}
+#searchView input:focus {
+  border: none;
+}
+#searchView button img {
+  width: 60%;
+  height: 55%;
+  /* background-color: aqua; */
+}
+#topBar #infoView {
+  width: 40%;
+  height: 32px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#infoView p a {
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+#infoView p a:hover {
+  font-weight: 400;
+  color: red;
+}
+#infoView div {
+  width: 10%;
+  height: 100%;
+  position: relative;
+
+  /* background-color: beige; */
+}
+#infoView > div > a > img {
+  width: 50%;
+  height: 70%;
+}
+#infoView > div > #quantityFavorite {
+  position: absolute;
+  top: -20px;
+  right: 25px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}

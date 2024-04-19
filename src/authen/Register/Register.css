@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#regisContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(8 10 26);
+}
+#regisContent {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+}
+#formRegis {
+  width: 40%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 620px;
+  margin: 176px 0 100px 0;
+  background-color: rgb(9, 22, 52);
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+#formRegis > img {
+  margin: 50px 0 0px 0;
+  width: 150px;
+  height: 70px;
+}
+#formRegis > p {
+  color: gray;
+  font-weight: 600;
+  width: 80%;
+  margin: 20px 0 10px 0;
+}
+
+#formRegis > input {
+  height: 55px;
+  padding-left: 5%;
+  color: white;
+  font-weight: 500;
+  width: 80%;
+  border-radius: 4px;
+  background-color: rgb(7, 10, 28);
+  border: 1px solid grey;
+}
+#formRegis > button {
+  width: 85%;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border-radius: 8px;
+  margin-top: 35px;
+  transition: all 0.5s ease;
+}
+#formRegis > button:hover {
+  background-color: black;
+  border: 1px solid red;
+}
+#formRegis > button > img {
+  width: 20px;
+  height: 20px;
+}
+#formRegis > button > p {
+  color: white;
+  margin-left: 2%;
+  font-size: 16px;
+}
+#signUpView {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 15px;
+  letter-spacing: 0.8px;
+}
+#signUpView p {
+  color: grey;
+  font-size: 16px;
+  font-weight: 500;
+}
+#signUpView h2 {
+  display: flex;
+  align-items: center;
+  justify-content: calc();
+}
+#signUpView h2 a {
+  text-decoration: none;
+  align-self: center;
+  color: white;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+#signUpView h2:hover {
+  cursor: pointer;
+}
