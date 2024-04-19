@@ -1,17 +1,158 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
-  #profileContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgb(8 10 26);
-  }
-  #profileContent {
-    width: 1440px;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-  }
+  padding: 0;
+  margin: 0;
+}
+#profileContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(8 10 26);
+}
+#profileContent {
+  width: 1440px;
+  height: 800px;
+  display: flex;
+  /* justify-content: center; */
+}
+#profileMain {
+  width: 100%;
+  margin-top: 145px;
+  height: 400px;
+  /* background-color: aliceblue; */
+  display: flex;
+  justify-content: space-between;
+}
+
+#rightMain {
+  width: 72%;
+  background-color: rgb(11 15 41);
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  transform: translate(0%, 20%) scale(1);
+  opacity: 0;
+  transition: all 1s ease;
+  height: 565px;
+}
+#rightMain.active {
+  transform: translate(0%, 0%) scale(1);
+  opacity: 1;
+}
+#rightMain > h1 {
+  padding: 20px 0 0 3%;
+  color: white;
+  font-size: 22px;
+}
+#rightMain > p {
+  color: rgb(75 85 99);
+  font-weight: 600;
+  padding-left: 3%;
+  width: 80%;
+  margin: 20px 0 10px 0;
+}
+#rightMain > input {
+  height: 55px;
+  margin-left: 3%;
+  padding-left: 3%;
+  color: white;
+  font-weight: 500;
+  width: 91%;
+  border-radius: 4px;
+  background-color: rgb(7, 10, 28);
+  border: 1px solid grey;
+}
+#uploadAvtView {
+  width: 94%;
+  margin: 10px 0 0 3%;
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  align-items: center;
+}
+#uploadAvatar {
+  width: 83%;
+  border: 2px rgb(104, 98, 98) dashed;
+  border-radius: 5px;
+  background-color: rgb(8 10 26);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#uploadAvatar > img {
+  width: 30px;
+  height: 30px;
+}
+#uploadAvatar > h4 {
+  font-weight: 500;
+}
+#uploadAvatar > i {
+  padding-top: 5px;
+  font-weight: 400;
+  font-size: 13px;
+  color: rgb(75 85 99);
+}
+#uploadAvatar:hover {
+  cursor: pointer;
+}
+#avtLoaded {
+  width: 120px;
+  height: 120px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-left: 3%;
+  background-color: rgb(8 10 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#avtLoaded > img {
+  width: 104px;
+  height: 104px;
+  border-radius: 5px;
+}
+#dltANDupdate {
+  width: 94%;
+  height: 55px;
+  margin: 40px 0 0 3%;
+  display: flex;
+  justify-content: space-between;
+}
+#btnDelete {
+  width: 172px;
+  border-radius: 4px;
+  height: 100%;
+  transition: all 0.5s ease;
+
+  background-color: red;
+}
+#btnDelete p {
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+}
+#btnDelete:hover {
+  background-color: rgb(8 10 26);
+  border: 1px solid red;
+}
+#btnUpdate {
+  width: 172px;
+  border-radius: 4px;
+  height: 100%;
+  transition: all 0.5s ease;
+
+  background-color: rgb(8 10 26);
+  border: 1px solid red;
+}
+#btnUpdate p {
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+}
+#btnUpdate:hover {
+  background-color: red;
+}

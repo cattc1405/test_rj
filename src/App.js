@@ -9,6 +9,8 @@ import React, { useState } from "react";
 import Login from "./authen/Login/Login";
 import Register from "./authen/Register/Register";
 import Profile from "./authen/Profile/Profile";
+import Favorites from "./authen/Favorites/Favorites";
+import ChangePass from "./authen/ChangePassword/ChangePass";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/favorites" element={<Favorites />} />
+            <Route path="/pass" element={<ChangePass />} />
           </Route>
         </Routes>
       </Router>
