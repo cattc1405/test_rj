@@ -13,9 +13,9 @@
 #popularItem:hover{
     transform: scale(0.95);
 }
-#popularItem > img {
-  width: 97%;
-  height: 96%;
+#popularItem >a >img {
+  width: 100%;
+  height: 240px;
   object-fit: cover;
   border-radius: 3px;
 }

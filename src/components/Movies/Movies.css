@@ -12,5 +12,31 @@
   #moviesContent {
     height: 800px;
     width: 1440px;
+    display: flex; /* Sử dụng flexbox */
+    flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+    align-items: center; /* Căn giữa các phần tử theo chiều ngang */
   }
+  select{
+    margin: 0 45px;
+    padding: 10px 25px;
+    color: wheat;
+    background-color: black;
+    border-radius: 5px;
+  }
+  select option{
+    padding: 25px;
+    
+  }
+  .selectContainer{
+    margin-bottom: 20px;
+    background-color: rgb(24, 24, 63); 
+    padding: 15px 0px;
+    border-radius: 5px;
+  }
+  .textT{
+    margin-bottom: 20px;
+    color: #fff;
+  }
+ 
+
   
