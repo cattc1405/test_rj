@@ -11,7 +11,7 @@ import Register from "./authen/Register/Register";
 import Profile from "./authen/Profile/Profile";
 import Favorites from "./authen/Favorites/Favorites";
 import ChangePass from "./authen/ChangePassword/ChangePass";
-
+import Dashboard from "./admin/Dashboard/Dashboard";
 function App() {
   return (
     <div className="container">
@@ -27,6 +27,7 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/favorites" element={<Favorites />} />
             <Route path="/pass" element={<ChangePass />} />
+            <Route path="/dashboard" element={<Dashboard />} />
           </Route>
         </Routes>
       </Router>

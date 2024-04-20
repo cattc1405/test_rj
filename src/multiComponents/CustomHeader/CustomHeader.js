@@ -4,7 +4,7 @@ import "./CustomHeader.css";
 export default function CustomHeader() {
   return (
     <div id="topBar">
-      <a href="/">
+      <a href="/dashboard">
         <img
           src={require("../../assets/icons/WqVDjHRB4ek5dJqBmMFGEJ.png")}
           alt=""
