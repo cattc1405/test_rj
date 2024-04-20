@@ -3,6 +3,7 @@ import Home from "./components/Home/Home";
 import ContactUs from "./components/ContactUs/ContactUs";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Movies from "./components/Movies/Movies";
+import MoviesDetail from "./components/MoviesDetail/MoviesDetail";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React, { useState } from "react";
@@ -20,6 +21,7 @@ function App() {
           <Route>
             <Route path="/" element={<Home />} />
             <Route path="/movies" element={<Movies />} />
+            <Route path="/moviesDetail" element={<MoviesDetail />} />
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/login" element={<Login />} />
