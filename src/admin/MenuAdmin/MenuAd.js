@@ -21,7 +21,7 @@ export default function MenuAd() {
           <p>Dashboard</p>
         </div>
       </a>
-      <a href="/favorites">
+      <a href="/movieslist">
         <div
           onClick={() => handleClick(1)}
           className={selectedItem === 1 ? "selected" : ""}
@@ -32,7 +32,7 @@ export default function MenuAd() {
           <p>Movies List</p>
         </div>
       </a>
-      <a href="/pass">
+      <a href="/addmovies">
         <div
           onClick={() => handleClick(2)}
           className={selectedItem === 2 ? "selected" : ""}

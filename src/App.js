@@ -12,6 +12,9 @@ import Profile from "./authen/Profile/Profile";
 import Favorites from "./authen/Favorites/Favorites";
 import ChangePass from "./authen/ChangePassword/ChangePass";
 import Dashboard from "./admin/Dashboard/Dashboard";
+import AddMovies from "./admin/AddMovies/AddMovies";
+import MoviesList from "./admin/MoviesList/MoviesList";
+
 function App() {
   return (
     <div className="container">
@@ -28,6 +31,8 @@ function App() {
             <Route path="/favorites" element={<Favorites />} />
             <Route path="/pass" element={<ChangePass />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/addmovies" element={<AddMovies />} />
+            <Route path="/movieslist" element={<MoviesList />} />
           </Route>
         </Routes>
       </Router>
