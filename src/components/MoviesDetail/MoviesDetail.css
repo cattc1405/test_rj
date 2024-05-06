@@ -13,18 +13,25 @@
   position: relative;
   margin-top: 100px;
   height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 1440px;
-  background-image: url("../../assets/images/film3.jpg");
-  background-repeat: no-repeat; /* kytgvhgv lặp lại ảnh */
-  background-size: cover; /* Đảm bảo hình ảnh vừa với phần tử */
 }
-
+.imgBackgr {
+  width: 98%;
+  height: fit-content;
+  background-color: rgb(8 10 26);
+  top: 96px;
+  filter: opacity(0.15);
+}
 #bannerr {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  z-index: auto;
+  position: absolute;
 }
 #bannerr > img {
   width: 300px;
@@ -41,10 +48,10 @@
   display: flex;
   margin: 25px 0;
 }
-#time > p{
+#time > p {
   margin: 0 15px;
 }
-.box{
+.box {
   margin-top: 50px;
   background-color: rgb(4, 0, 17);
   width: 100%;
