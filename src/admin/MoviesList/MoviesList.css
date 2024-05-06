@@ -2,20 +2,20 @@
   padding: 0;
   margin: 0;
 }
-#moviesContainer {
+#moviesListContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
   background-color: rgb(8 10 26);
 }
-#moviesContent {
+#moviesListContent {
   width: 1440px;
   height: 800px;
   display: flex;
   /* background-color: aquamarine; */
 }
-#moviesMain {
+#moviesListMain {
   width: 100%;
   margin-top: 145px;
   height: 400px;
