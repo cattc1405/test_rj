@@ -8,7 +8,7 @@ export default function Movies() {
       <div id="moviesContent">
         <CustomHeader />
 
-        <div style={{margin: 100}}>
+        <div id="divMain">
           <div className="selectContainer">
           <select className="selects">
             <option value="0">All Categories</option>

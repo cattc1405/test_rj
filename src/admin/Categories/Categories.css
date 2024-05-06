@@ -120,8 +120,8 @@ th {
   text-align: right;
   padding-right: 25px;
 }
-td {
-  height: 50px;
+.trCate td {
+  height: 40px;
   color: white;
   font-size: 14px;
   font-weight: 600;

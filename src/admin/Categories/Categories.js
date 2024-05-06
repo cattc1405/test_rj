@@ -54,7 +54,7 @@ export default function Categories() {
                 <th id="thName">NAME</th>
                 <th id="thActions">ACTIONS</th>
               </tr>
-              <tr>
+              <tr className="trCate">
                 <td className="tdId">637CA086</td>
                 <td className="tdDate">November 22, 2022</td>
                 <td className="tdName">Action</td>
@@ -76,7 +76,7 @@ export default function Categories() {
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr className="trCate">
                 <td className="tdId">637CA086</td>
                 <td className="tdDate">November 22, 2022</td>
                 <td className="tdName">Action</td>
@@ -98,7 +98,7 @@ export default function Categories() {
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr className="trCate">
                 <td className="tdId">637CA086</td>
                 <td className="tdDate">November 22, 2022</td>
                 <td className="tdName">Action</td>
@@ -135,7 +135,7 @@ const handleAddCategory = (categoryName) => {
   const parentElement = document.getElementById("tableCategories");
 
   const newCastElement = document.createElement("tr");
-
+  newCastElement.className = "trCate";
   newCastElement.innerHTML = `
     <td class="tdId">637CA086</td>
     <td class="tdDate">November 22, 2022</td>

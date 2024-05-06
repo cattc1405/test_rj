@@ -12,10 +12,10 @@ export default function MoviesList() {
   }, []);
 
   return (
-    <div id="moviesContainer">
-      <div id="moviesContent">
+    <div id="moviesListContainer">
+      <div id="moviesListContent">
         <CustomHeader />
-        <div id="moviesMain">
+        <div id="moviesListMain">
           <MenuAd />
           <div id="rightMainMv" className={isRightMainActive ? "active" : ""}>
             <h1>Movies List</h1>

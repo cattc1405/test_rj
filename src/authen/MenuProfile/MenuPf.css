@@ -24,9 +24,14 @@
   align-items: center;
   transition: all 0.7s ease;
 }
-.selected {
-  background-color: antiquewhite;
+.selectedMenu {
+  background-color: rgba(223, 205, 185, 0.6);
+}
+.selectedMenu > p {
   color: red;
+}
+#menuPf > a > .selectedMenu:hover {
+  background-color: rgba(223, 205, 185, 0.6);
 }
 #menuPf > a > div:hover {
   background-color: rgb(0, 0, 0, 0.5);

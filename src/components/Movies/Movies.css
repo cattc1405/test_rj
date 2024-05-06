@@ -10,14 +10,18 @@
     background-color: rgb(8 10 26);
   }
   #moviesContent {
-    height: 800px;
+    height: fit-content;
     width: 1440px;
     display: flex; /* Sử dụng flexbox */
     flex-direction: column; /* Xếp các phần tử theo chiều dọc */
     align-items: center; /* Căn giữa các phần tử theo chiều ngang */
   }
+  #moviesContent #divMain{
+    margin: 96px 0 0 0 ;
+  }
   select{
-    margin: 0 45px;
+    margin: 0 10px 0 10px;
+    width: 17%;
     padding: 10px 25px;
     color: wheat;
     background-color: black;
@@ -31,6 +35,10 @@
     margin-bottom: 20px;
     background-color: rgb(24, 24, 63); 
     padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: #fff; */
     border-radius: 5px;
   }
   .textT{

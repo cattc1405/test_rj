@@ -7,11 +7,10 @@ export default function MoviesDetail() {
       <CustomHeader />
 
       <div id="moviesDContent">
+        <img className="imgBackgr" src={require("./../../assets/images/film3.jpg")} alt="" />
+
         <div id="bannerr">
-          <img
-            src={require("./../../assets/images/anh.jpg")}
-            alt=""           
-          />
+          <img src={require("./../../assets/images/anh.jpg")} alt="" />
           <div id="infor">
             <h3>Doctor Strange</h3>
 
@@ -28,9 +27,7 @@ export default function MoviesDetail() {
               electronic typesetting, remaining essentially unchanged.
             </p>
 
-            <div className="box">
-
-            </div>
+            <div className="box"></div>
           </div>
         </div>
       </div>
