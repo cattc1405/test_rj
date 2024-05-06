@@ -15,7 +15,7 @@
   height: 800px;
   width: 1440px;
   background-image: url("../../assets/images/film3.jpg");
-  background-repeat: no-repeat; /* kytgvhgv lặp lại ảnh */
+  background-repeat: no-repeat; /* k lặp lại ảnh */
   background-size: cover; /* Đảm bảo hình ảnh vừa với phần tử */
 }
 
