@@ -15,13 +15,15 @@ import ChangePass from "./authen/ChangePassword/ChangePass";
 import Dashboard from "./admin/Dashboard/Dashboard";
 import AddMovies from "./admin/AddMovies/AddMovies";
 import MoviesList from "./admin/MoviesList/MoviesList";
+import Categories from "./admin/Categories/Categories";
+import Users from "./admin/Users/Users";
 
 function App() {
   return (
     <div className="container">
       <Router id="router">
         <Routes id="routes">
-          <Route>
+          {/* <Route> */}
             <Route path="/" element={<Home />} />
             <Route path="/movies" element={<Movies />} />
             <Route path="/moviesDetail" element={<MoviesDetail />} />
@@ -35,7 +37,9 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/addmovies" element={<AddMovies />} />
             <Route path="/movieslist" element={<MoviesList />} />
-          </Route>
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/users" element={<Users />} />
+          {/* </Route> */}
         </Routes>
       </Router>
     </div>

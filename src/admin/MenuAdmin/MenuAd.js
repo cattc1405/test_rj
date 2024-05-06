@@ -1,20 +1,48 @@
 import React, { useState, useEffect } from "react";
 import "./MenuAd.css";
+import { NavLink } from "react-router-dom";
 
 export default function MenuAd() {
   const [selectedItem, setSelectedItem] = useState(null);
 
   const handleClick = (index) => {
-    setSelectedItem(index === selectedItem ? null : index);
+    setSelectedItem(index);
+    localStorage.setItem("selectedItem", index);
   };
+
+  useEffect(() => {
+    const savedSelectedItem = localStorage.getItem("selectedItem");
+    if (savedSelectedItem !== null) {
+      setSelectedItem(savedSelectedItem);
+    }
+  }, []);
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    switch (currentPath) {
+      case "/dashboard":
+        setSelectedItem(0);
+        break;
+      case "/movieslist":
+        setSelectedItem(1);
+        break;
+        case "/addmovies":
+          setSelectedItem(2);
+        break;
+        case "/categories":
+          setSelectedItem(3);
+        break;
+        case "/users":
+          setSelectedItem(4);
+          break;
+      default:
+        break;
+    }
+  }, []);
 
   return (
     <div id="menuAd">
       <a href="/dashboard">
-        <div
-          onClick={() => handleClick(0)}
-          className={selectedItem === 0 ? "selected" : ""}
-        >
+        <div className={selectedItem === 0 ? "selected" : ""}>
           <div className="imgView">
             <img src={require("../../assets/icons/orangeSetting.png")} alt="" />
           </div>
@@ -22,10 +50,7 @@ export default function MenuAd() {
         </div>
       </a>
       <a href="/movieslist">
-        <div
-          onClick={() => handleClick(1)}
-          className={selectedItem === 1 ? "selected" : ""}
-        >
+        <div className={selectedItem == 1 ? "selected" : ""}>
           <div className="imgView">
             <img src={require("../../assets/icons/orangeSetting.png")} alt="" />
           </div>
@@ -35,7 +60,7 @@ export default function MenuAd() {
       <a href="/addmovies">
         <div
           onClick={() => handleClick(2)}
-          className={selectedItem === 2 ? "selected" : ""}
+          className={selectedItem == 2 ? "selected" : ""}
         >
           <div className="imgView">
             <img src={require("../../assets/icons/orangeSetting.png")} alt="" />
@@ -43,10 +68,10 @@ export default function MenuAd() {
           <p>Add Movie</p>
         </div>
       </a>
-      <a href="/login">
+      <a href="/categories">
         <div
           onClick={() => handleClick(3)}
-          className={selectedItem === 3 ? "selected" : ""}
+          className={selectedItem == 3 ? "selected" : ""}
         >
           <div className="imgView">
             <img src={require("../../assets/icons/orangeSetting.png")} alt="" />
@@ -54,10 +79,10 @@ export default function MenuAd() {
           <p>Categorires</p>
         </div>
       </a>
-      <a href="/login">
+      <a href="/users">
         <div
-          onClick={() => handleClick(3)}
-          className={selectedItem === 3 ? "selected" : ""}
+          onClick={() => handleClick(4)}
+          className={selectedItem == 4 ? "selected" : ""}
         >
           <div className="imgView">
             <img src={require("../../assets/icons/orangeSetting.png")} alt="" />
@@ -65,10 +90,9 @@ export default function MenuAd() {
           <p>Users</p>
         </div>
       </a>
-      <a href="/login">
+      <a href="/profile">
         <div
-          onClick={() => handleClick(3)}
-          className={selectedItem === 3 ? "selected" : ""}
+          className={selectedItem === 5 ? "selected" : ""}
         >
           <div className="imgView">
             <img src={require("../../assets/icons/orangeSetting.png")} alt="" />
@@ -78,8 +102,7 @@ export default function MenuAd() {
       </a>
       <a href="/login">
         <div
-          onClick={() => handleClick(3)}
-          className={selectedItem === 3 ? "selected" : ""}
+          className={selectedItem === 6 ? "selected" : ""}
         >
           <div className="imgView">
             <img src={require("../../assets/icons/orangeSetting.png")} alt="" />
@@ -89,8 +112,7 @@ export default function MenuAd() {
       </a>
       <a href="/login">
         <div
-          onClick={() => handleClick(3)}
-          className={selectedItem === 3 ? "selected" : ""}
+          className={selectedItem == 7 ? "selected" : ""}
         >
           <div className="imgView">
             <img src={require("../../assets/icons/orangeSetting.png")} alt="" />
@@ -100,8 +122,7 @@ export default function MenuAd() {
       </a>
       <a href="/login">
         <div
-          onClick={() => handleClick(3)}
-          className={selectedItem === 3 ? "selected" : ""}
+          className={selectedItem == 8 ? "selected" : ""}
         >
           <div className="imgView">
             <img src={require("../../assets/icons/orangeSetting.png")} alt="" />
