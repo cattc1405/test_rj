@@ -20,7 +20,7 @@
 }
 .imgBackgr {
   width: 98%;
-  height: fit-content;
+  height: 800px;
   background-color: rgb(8 10 26);
   top: 96px;
   filter: opacity(0.15);
