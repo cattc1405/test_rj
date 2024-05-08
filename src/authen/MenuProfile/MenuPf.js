@@ -5,11 +5,15 @@ export default function MenuPf() {
  
   const [selectedItem, setSelectedItem] = useState(null);
 
+
   const handleClick = (index) => {
     setSelectedItem(index);
     localStorage.setItem("selectedItem", index);
   };
-
+const handleLogout = () => {
+    localStorage.removeItem("token"); 
+    window.location.href = "/login"; 
+  };
   useEffect(() => {
     const savedSelectedItem = localStorage.getItem("selectedItem");
     if (savedSelectedItem !== null) {
@@ -74,7 +78,7 @@ export default function MenuPf() {
       </a>
       <a href="/login">
         <div
-          onClick={() => handleClick(3)}
+          onClick={handleLogout}
           className={selectedItem === 3 ? "selectedMenu" : ""}
         >
           <div className="imgView">

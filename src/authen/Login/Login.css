@@ -47,7 +47,7 @@
   background-color: rgb(7, 10, 28);
   border: 1px solid grey;
 }
-#formLogin > a > button {
+#formLogin >  button {
   width: 100%;
   height: 55px;
   display: flex;
@@ -58,22 +58,25 @@
   background-color: red;
   border-radius: 8px;
 }
-#formLogin > a {
+#formLogin .loadingButton:hover{
+  background-color: red;
+}
+#formLogin button {
   width: 85%;
   margin-top: 35px;
   text-decoration: none;
   height: 55px;
 }
-#formLogin > a > button:hover {
+#formLogin  button:hover {
   background-color: black;
   cursor: pointer;
   border: 1px solid red;
 }
-#formLogin > a > button > img {
+#formLogin > button > img {
   width: 20px;
   height: 20px;
 }
-#formLogin > a > button > p {
+#formLogin > button > p {
   color: white;
   margin-left: 2%;
   
@@ -108,4 +111,21 @@
 }
 #signUpView h2:hover {
   cursor: pointer;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  margin-left: 5px;
 }

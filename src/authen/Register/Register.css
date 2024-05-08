@@ -18,37 +18,68 @@
   width: 40%;
   border: 1px solid gray;
   border-radius: 10px;
-  height: 620px;
+  height: fit-content;
+  background-color: rgb(78, 60, 38,0.6);
   margin: 176px 0 100px 0;
   background-color: rgb(11 15 41);
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   display: flex;
+}
+.formRegisContent{
+  width: 80%;
+  height: fit-content;
+  /* background-color: aqua; */
 }
 #formRegis > img {
   margin: 50px 0 0px 0;
   width: 150px;
   height: 70px;
 }
-#formRegis > p {
+.formRegisContent > p {
   color: gray;
   font-weight: 600;
   width: 80%;
-  margin: 20px 0 10px 0;
+  margin: 20px 0 10px 10px;
 }
-
-#formRegis > input {
+.fullname{
+  width:  100%;
+display: flex;
+justify-content: space-between;
+}
+.fullname>div{
+  width: 46%;
+  /* background-color: #fff; */
+}
+.fullname p {
+  color: gray;
+  font-weight: 600;
+  width: 80%;
+  margin: 20px 0 10px 10px;
+}
+.fullname input {
   height: 55px;
-  padding-left: 5%;
+  padding-left: 10px;
   color: white;
   font-weight: 500;
-  width: 80%;
+  width: 100%;
   border-radius: 4px;
   background-color: rgb(7, 10, 28);
   border: 1px solid grey;
 }
-#formRegis > button {
-  width: 85%;
+.formRegisContent > input {
+  height: 55px;
+  padding-left: 10px;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgb(7, 10, 28);
+  border: 1px solid grey;
+}
+.formRegisContent > button {
+  width: 100%;
   height: 55px;
   display: flex;
   flex-direction: row;
@@ -59,16 +90,16 @@
   margin-top: 35px;
   transition: all 0.5s ease;
 }
-#formRegis > button:hover {
+.formRegisContent > button:hover {
   background-color: black;
   border: 1px solid red;
   cursor: pointer;
 }
-#formRegis > button > img {
+.formRegisContent > button > img {
   width: 20px;
   height: 20px;
 }
-#formRegis > button > p {
+.formRegisContent > button > p {
   color: white;
   margin-left: 2%;
   font-size: 16px;
@@ -76,6 +107,7 @@
 #signUpView {
   display: flex;
   height: 40px;
+  margin:  0 0 15px 0;
   align-items: center;
   justify-content: center;
   flex-direction: row;
